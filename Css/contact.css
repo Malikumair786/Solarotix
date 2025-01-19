@@ -1,0 +1,81 @@
+*{
+    margin: 0px;padding: 0px;box-sizing: border-box;
+}
+.background-container {
+    background-image: url('../Images/12.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    max-width: 2500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+/* Text styling */
+.text-overlay {
+    text-align: center;
+    color: white; /* Text color */
+    padding: 20px;
+    background-color: rgb(49, 158, 58);
+
+    /* Optional: semi-transparent background */
+    border-radius: 10px; /* Optional: rounded corners */
+    opacity: 0;
+    transform: translateY(-100%); /* Start from above the container */
+    animation: slideIn 3s forwards; /* Animation for sliding in */
+}
+
+.text-overlay h1 {
+    font-size: 5em;
+    margin: 0;
+}
+.text-overlay p {
+    font-size: 1.2em;
+}
+.row1{
+   
+    margin-top: 20px;
+    padding: 10px;
+    line-height: 1.5;
+}
+.msg{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+.msg h1{
+    color: #399939;
+}
+.bttn{
+    padding: 10px;
+    background-color: #399939;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.bttn:hover{
+    background-color: #1B3C73;
+}
+@media screen and (max-width: 786px) {
+    .text-overlay h1 {
+        font-size: 2rem;
+    }
+    .background-container img{
+        height: 400px;
+    }
+  }
+/* Animation for sliding the text from top to center */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Start position above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position at the center */
+    }
+}

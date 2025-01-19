@@ -1,0 +1,110 @@
+*{
+    margin: 0px;padding: 0px;box-sizing: border-box;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Set the background container */
+.background-container {
+    background-image: url('../Images/bner5.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    max-width: 2500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+/* Text styling */
+.text-overlay {
+    text-align: center;
+    color: white; /* Text color */
+    padding: 20px;
+    background-color: rgb(49, 158, 58);
+
+    /* Optional: semi-transparent background */
+    border-radius: 10px; /* Optional: rounded corners */
+    opacity: 0;
+    transform: translateY(-100%); /* Start from above the container */
+    animation: slideIn 3s forwards; /* Animation for sliding in */
+}
+
+.text-overlay h1 {
+    font-size: 4em;
+    margin: 0;
+}
+.text-overlay p {
+    font-size: 1.2em;
+}
+.text2 h1{
+color: #399939;
+font-weight: bold;
+}
+.text2 p{
+    font-weight: bold;
+}
+    .text2 h1{
+        color: #399918;
+        font-size: 45px;
+    }
+.item3{
+    background-color: #399918;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.item4{
+    background-color: rgb(37, 37, 207);
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.item3  button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2 px solid white;
+}
+.fotr{
+    color: white;
+  }
+  .fotr h1{
+    align-items: center;
+    text-align: center;
+  }
+  .fotr li{
+    list-style-type: none;text-align: center;
+  }
+  @media screen and (min-width: 765px) {
+    .foot-item img {
+      width: 220px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .foot-item img {
+      width: 270px;
+    }
+    .foot-item{
+        align-items: center;
+    }
+  }
+  .copy-right hr{
+    color: rgb(155, 142, 142);
+    height: 2px;
+  }
+  .copy-right p{
+    color: white;
+    text-align: center;
+  }
+/* Animation for sliding the text from top to center */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Start position above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position at the center */
+    }
+}
+

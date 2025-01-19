@@ -1,0 +1,141 @@
+*{
+    margin: 0px;padding: 0px;box-sizing: border-box;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Set the background container */
+.background-container {
+    background-image: url('../Images/10.avif'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    max-width: 2500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+/* Text styling */
+.text-overlay {
+    text-align: center;
+    color: white; /* Text color */
+    padding: 20px;
+    background-color: rgb(49, 158, 58);
+
+    /* Optional: semi-transparent background */
+    border-radius: 10px; /* Optional: rounded corners */
+    opacity: 0;
+    transform: translateY(-100%); /* Start from above the container */
+    animation: slideIn 3s forwards; /* Animation for sliding in */
+}
+
+.text-overlay h1 {
+    font-size: 5em;
+    margin: 0;
+}
+.text-overlay p {
+    font-size: 1.2em;
+}
+.text{
+    font-size: 2rem;
+    font-weight: bold;padding: 15px;margin: 20px;
+    text-align: center;color: #399918;  
+}
+.images{
+    background-size: cover;position: relative;filter: brightness(0.9);min-width: 320px;min-height: 300px;
+}
+.img1{
+    background-image: url('../Images/8.jpg');
+}
+.img2{
+    background-image: url('../Images/6.jpg');
+}
+.img3{
+    background-image: url('../Images/5.webp');
+}
+.img4{
+    background-image: url('../Images/7.jpg');
+}
+.text1 h1{
+    text-align: center;color: white;font-weight: bold;font-size: 3rem;
+}
+.text1 p{
+    font-size: 25px;
+    font-weight: bold;padding: 15px;margin: 20px;
+    text-align: center;color: white;  
+}
+ .bttn{
+    background-color: #399918;padding: 10px;font-weight: bold;font-size: 25px;color: white;align-items: center;text-align: center;text-decoration: none;
+}
+.btnn{
+align-items: center;
+}
+.bttn a{text-decoration: none;}
+.bttn:hover{
+    background-color:#1B3C73;color: white;
+}
+.list ul li{
+list-style-type: none;
+}
+.service{
+    text-align: center;
+    border-right: 2px solid rgb(241, 235, 235);padding: 5px;font-weight: bold;
+}
+
+.services{
+    text-align: center;padding: 5px;font-weight: bold;
+}
+.text2 h1{
+    color: #399918;
+    font-size: 45px;
+}
+@media screen and (max-width: 765px) {
+    .service {
+      border-bottom: 2px solid rgb(241, 235, 235);border-right: none;
+    }
+  }
+  .fotr{
+    color: white;
+  }
+  .fotr h1{
+    align-items: center;
+    text-align: center;
+  }
+  .fotr li{
+    list-style-type: none;text-align: center;
+  }
+  @media screen and (min-width: 765px) {
+    .foot-item img {
+      width: 220px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .foot-item img {
+      width: 270px;
+    }
+    .foot-item{
+        align-items: center;
+    }
+  }
+  .copy-right hr{
+    color: rgb(155, 142, 142);
+    height: 2px;
+  }
+  .copy-right p{
+    color: white;
+    text-align: center;
+  }
+  
+
+ 
+
+/* Animation for sliding the text from top to center */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Start position above */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position at the center */
+    }
+}
