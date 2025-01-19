@@ -10,12 +10,6 @@
   .contact{
     display: flex;padding: 10px;font-weight: bold;align-items: center;background-color: #399918;flex-wrap: wrap;justify-content: space-around;color: white;
   }
-
-  
- 
-  
- 
-  
 /* Basic navbar styling */
 .navbar {
     background-color: white;
